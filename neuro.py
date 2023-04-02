@@ -20,7 +20,6 @@ tokenizer = Tokenizer(max_words)
 tokenizer.fit_on_texts(reviews)
  
 sequences = tokenizer.texts_to_sequences(reviews)
-#len(sequences)
 word_index = tokenizer.word_index
 data = pad_sequences(sequences, maxlen=max_len)
  
