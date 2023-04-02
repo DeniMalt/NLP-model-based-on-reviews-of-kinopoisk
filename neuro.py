@@ -3,7 +3,7 @@ from keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 from numpy.lib.npyio import load
-with open("/content/drive/MyDrive/ml/_all_not_utf_8.json", "r") as rfile:
+with open("Путь к файлу с отзывами", "r") as rfile:
   ld = json.load(rfile)
  
 reviews = []
